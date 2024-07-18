@@ -2,9 +2,9 @@
 using SharpPluginLoader.Core.Entities;
 using SharpPluginLoader.Core;
 
-namespace Teleport
+namespace FTLite
 {
-    public class Teleport : IPlugin
+    public class FTLite : IPlugin
     {
         public string Name => "FT Lite"; public string Author => "seka";
         public Monster? _selectedMonsterT = null;
