@@ -2,9 +2,9 @@
 using SharpPluginLoader.Core.Entities;
 using SharpPluginLoader.Core;
 
-namespace FTLite
+namespace FlyMeToTheMon
 {
-    public class FTLite : IPlugin
+    public class FlyMeToTheMon: IPlugin
     {
         public string Name => "Fly Me to the Mon"; public string Author => "seka";
         public Monster? _selectedMonsterT = null;
