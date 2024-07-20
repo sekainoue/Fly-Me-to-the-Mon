@@ -6,7 +6,7 @@ namespace FTLite
 {
     public class FTLite : IPlugin
     {
-        public string Name => "FT Lite"; public string Author => "seka";
+        public string Name => "Fly Me to the Mon"; public string Author => "seka";
         public Monster? _selectedMonsterT = null;
         public void ResetState()
         {
@@ -46,11 +46,12 @@ namespace FTLite
                 ImGui.EndCombo();
             }
 
-            if (ImGui.Button("You-to-Mon"))
+            if (ImGui.Button("Go!"))
             {
                 if (_selectedMonsterT == null || player == null)
                     return;
                 player.Teleport(_selectedMonsterT.Position);
+                _selectedMonsterT = null;
             }
         }
 
